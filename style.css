@@ -57,14 +57,14 @@ header {
 
 .counter-box {
   display: inline-flex;
-  align-items: center;
-  gap: 10px;
+  flex-direction: column;  /* <- questa riga */
+  gap: 8px;
   background: #f4f6f8;
   padding: 10px 16px;
   border-radius: 12px;
-  font-family: Arial, sans-serif;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
+
 
 .counter-box .label {
   font-size: 14px;
