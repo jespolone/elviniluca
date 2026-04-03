@@ -57,7 +57,7 @@ header {
 
 .counter-box {
   display: inline-grid;
-  flex-direction: column;  /* <- questa riga */
+  flex-direction: column;
   gap: 8px;
   background: #f4f6f8;
   padding: 10px 16px;
