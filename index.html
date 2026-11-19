@@ -21,60 +21,39 @@
 </script>
 </head>
 <body>
-<div class="layout">
+<div class="page">
 
-  <!-- SIDEBAR -->
-  <aside class="sidebar">
-    <div class="profile">
-      <img class="avatar" src="Elvin Iluca.jpeg" alt="Elvin Iluca">
+  <header class="hero">
+    <button class="theme-toggle" type="button" aria-label="Toggle light and dark theme">
+      <svg class="i-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3 3l1 1M12 12l1 1M13 3l-1 1M4 12l-1 1"/></svg>
+      <svg class="i-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M13.5 9.5A5.5 5.5 0 016.5 2.5a5.5 5.5 0 107 7z"/></svg>
+      <span class="tt-label"></span>
+    </button>
+
+    <img class="avatar" src="Elvin Iluca.jpeg" alt="Elvin Iluca">
+    <div class="hero-text">
       <h1>Elvin Iluca</h1>
       <p class="role">Software Engineer</p>
       <p class="status"><span class="dot"></span>Agile Lab · since Dec 2025</p>
     </div>
 
-    <nav class="nav" aria-label="Sections">
-      <a href="#about" class="active">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#stack">Tech Stack</a>
-    </nav>
-
-    <div class="side-bottom">
-      <div class="contacts">
-        <a href="mailto:elvinmiluca@gmail.com">
-          <svg class="c-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="14" height="10" rx="2"/><path d="M1 5l7 5 7-5"/></svg>
-          elvinmiluca@gmail.com
-        </a>
-        <a href="https://linkedin.com/in/elviniluca" target="_blank" rel="noopener">
-          <svg class="c-icon" viewBox="0 0 16 16" fill="currentColor"><path d="M0 1.15C0 .514.53 0 1.18 0h13.64C15.47 0 16 .514 16 1.15v13.7c0 .636-.53 1.15-1.18 1.15H1.18C.53 16 0 15.486 0 14.85V1.15zM4.8 13.6V6.17H2.4v7.43h2.4zM3.6 5.16c.836 0 1.356-.554 1.356-1.247C4.94 3.16 4.436 2.62 3.616 2.62c-.82 0-1.356.54-1.356 1.293 0 .693.52 1.247 1.324 1.247h.016zM8.64 13.6V9.47c0-.216.016-.432.08-.587.173-.432.567-.88 1.228-.88.866 0 1.213.66 1.213 1.627V13.6h2.4V9.36c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.846.717-2.157 1.203V6.17H6.24c.032.678 0 7.43 0 7.43h2.4z"/></svg>
-          linkedin.com/in/elviniluca
-        </a>
-        <span>
-          <svg class="c-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M8 14.5s5-4.3 5-8.2a5 5 0 10-10 0c0 3.9 5 8.2 5 8.2z"/><circle cx="8" cy="6.3" r="1.7"/></svg>
-          Rome, Italy
-        </span>
-      </div>
-
-      <div class="langs">
-        <h2 class="mini-label">Languages</h2>
-        <ul>
-          <li><span>Italian</span><em>Fluent</em></li>
-          <li><span>Romanian</span><em>Fluent</em></li>
-          <li><span>English</span><em>Intermediate</em></li>
-        </ul>
-      </div>
-
-      <button class="theme-toggle" type="button" aria-label="Toggle light and dark theme">
-        <svg class="i-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3 3l1 1M12 12l1 1M13 3l-1 1M4 12l-1 1"/></svg>
-        <svg class="i-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M13.5 9.5A5.5 5.5 0 016.5 2.5a5.5 5.5 0 107 7z"/></svg>
-        <span class="tt-label"></span>
-      </button>
+    <div class="contacts">
+      <a href="mailto:elvinmiluca@gmail.com">
+        <svg class="c-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="14" height="10" rx="2"/><path d="M1 5l7 5 7-5"/></svg>
+        elvinmiluca@gmail.com
+      </a>
+      <a href="https://linkedin.com/in/elviniluca" target="_blank" rel="noopener">
+        <svg class="c-icon" viewBox="0 0 16 16" fill="currentColor"><path d="M0 1.15C0 .514.53 0 1.18 0h13.64C15.47 0 16 .514 16 1.15v13.7c0 .636-.53 1.15-1.18 1.15H1.18C.53 16 0 15.486 0 14.85V1.15zM4.8 13.6V6.17H2.4v7.43h2.4zM3.6 5.16c.836 0 1.356-.554 1.356-1.247C4.94 3.16 4.436 2.62 3.616 2.62c-.82 0-1.356.54-1.356 1.293 0 .693.52 1.247 1.324 1.247h.016zM8.64 13.6V9.47c0-.216.016-.432.08-.587.173-.432.567-.88 1.228-.88.866 0 1.213.66 1.213 1.627V13.6h2.4V9.36c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.846.717-2.157 1.203V6.17H6.24c.032.678 0 7.43 0 7.43h2.4z"/></svg>
+        linkedin.com/in/elviniluca
+      </a>
+      <span>
+        <svg class="c-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M8 14.5s5-4.3 5-8.2a5 5 0 10-10 0c0 3.9 5 8.2 5 8.2z"/><circle cx="8" cy="6.3" r="1.7"/></svg>
+        Rome, Italy
+      </span>
     </div>
-  </aside>
+  </header>
 
-  <!-- MAIN -->
-  <main class="content">
-
+  <main>
     <section id="about">
       <h2 class="section-label">About</h2>
       <p class="lead">A lifelong technology enthusiast with an unwavering determination to learn and improve in this field. With a strong curiosity for technological innovation and its evolution, constantly trying to deepen my knowledge in these fields.</p>
@@ -197,6 +176,12 @@
           <h3>Practices</h3>
           <ul class="chips">
             <li>Software Architecture (LLD, ADR)</li><li>AI-Assisted Development</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Spoken Languages</h3>
+          <ul class="chips">
+            <li>Italian · Fluent</li><li>Romanian · Fluent</li><li>English · Intermediate</li>
           </ul>
         </div>
       </div>
