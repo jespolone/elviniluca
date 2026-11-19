@@ -3,214 +3,221 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elvin Iluca</title>
+<title>Elvin Iluca · Software Engineer</title>
+<meta name="description" content="Elvin Iluca, Software Engineer. Java, Spring Boot, Node.js, TypeScript, React, Angular, Keycloak and event-driven systems.">
+<meta name="color-scheme" content="light dark">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-
+<script>
+  // Set before first paint so the page does not flash the wrong theme.
+  (function () {
+    var saved = localStorage.getItem('theme');
+    var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+  })();
+</script>
 </head>
 <body>
-<div class="page">
+<div class="layout">
 
-  <!-- HEADER -->
-  <header>
-    <img class="avatar" src="Elvin Iluca.jpeg" alt="Elvin Iluca">
-    <div class="header-text">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="profile">
+      <img class="avatar" src="Elvin Iluca.jpeg" alt="Elvin Iluca">
       <h1>Elvin Iluca</h1>
       <p class="role">Software Engineer</p>
+      <p class="status"><span class="dot"></span>Agile Lab · since Dec 2025</p>
+    </div>
+
+    <nav class="nav" aria-label="Sections">
+      <a href="#about" class="active">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#stack">Tech Stack</a>
+    </nav>
+
+    <div class="side-bottom">
       <div class="contacts">
         <a href="mailto:elvinmiluca@gmail.com">
           <svg class="c-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="14" height="10" rx="2"/><path d="M1 5l7 5 7-5"/></svg>
           elvinmiluca@gmail.com
         </a>
-        <a href="https://linkedin.com/in/elviniluca" target="_blank">
+        <a href="https://linkedin.com/in/elviniluca" target="_blank" rel="noopener">
           <svg class="c-icon" viewBox="0 0 16 16" fill="currentColor"><path d="M0 1.15C0 .514.53 0 1.18 0h13.64C15.47 0 16 .514 16 1.15v13.7c0 .636-.53 1.15-1.18 1.15H1.18C.53 16 0 15.486 0 14.85V1.15zM4.8 13.6V6.17H2.4v7.43h2.4zM3.6 5.16c.836 0 1.356-.554 1.356-1.247C4.94 3.16 4.436 2.62 3.616 2.62c-.82 0-1.356.54-1.356 1.293 0 .693.52 1.247 1.324 1.247h.016zM8.64 13.6V9.47c0-.216.016-.432.08-.587.173-.432.567-.88 1.228-.88.866 0 1.213.66 1.213 1.627V13.6h2.4V9.36c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.846.717-2.157 1.203V6.17H6.24c.032.678 0 7.43 0 7.43h2.4z"/></svg>
           linkedin.com/in/elviniluca
         </a>
         <span>
-          <svg class="c-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1.5A4.5 4.5 0 018 10.5C5.5 10.5 2 7.5 2 5.5A6 6 0 0114 5.5c0 2-3.5 5-6 5z"/><circle cx="8" cy="5" r="1.5"/></svg>
+          <svg class="c-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M8 14.5s5-4.3 5-8.2a5 5 0 10-10 0c0 3.9 5 8.2 5 8.2z"/><circle cx="8" cy="6.3" r="1.7"/></svg>
           Rome, Italy
         </span>
       </div>
+
+      <div class="langs">
+        <h2 class="mini-label">Languages</h2>
+        <ul>
+          <li><span>Italian</span><em>Fluent</em></li>
+          <li><span>Romanian</span><em>Fluent</em></li>
+          <li><span>English</span><em>Intermediate</em></li>
+        </ul>
+      </div>
+
+      <button class="theme-toggle" type="button" aria-label="Toggle light and dark theme">
+        <svg class="i-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3 3l1 1M12 12l1 1M13 3l-1 1M4 12l-1 1"/></svg>
+        <svg class="i-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M13.5 9.5A5.5 5.5 0 016.5 2.5a5.5 5.5 0 107 7z"/></svg>
+        <span class="tt-label"></span>
+      </button>
     </div>
-  </header>
+  </aside>
 
-  <!-- ABOUT -->
-  <section>
-    <p class="section-label">About</p>
-    <p>A lifelong technology enthusiast with an unwavering determination to learn and improve in this field. With a strong curiosity for technological innovation and its evolution, constantly trying to deepen my knowledge in these fields.</p>
-  </section>
+  <!-- MAIN -->
+  <main class="content">
 
-  <!-- EXPERIENCE -->
-  <section>
-    <p class="section-label">Experience</p>
+    <section id="about">
+      <h2 class="section-label">About</h2>
+      <p class="lead">A lifelong technology enthusiast with an unwavering determination to learn and improve in this field. With a strong curiosity for technological innovation and its evolution, constantly trying to deepen my knowledge in these fields.</p>
+    </section>
 
-    <div class="exp-item">
-      <div class="exp-meta">
-        <div class="period">Dec 2025 — Present</div>
-        <div class="company">Agile Lab</div>
-      </div>
-      <div class="exp-content">
-        <h3>Software Engineer</h3>
-        <p>Owned architecture and delivery of a KPI dashboard for a national public safety agency (Angular, Spring Boot, Hasura/PostgreSQL). Moved GraphQL queries from the frontend into a backend service layer, creating a single secured gateway with no direct data layer access and per-query failure isolation.</p>
-        <p>Designed the authentication and authorization model on Keycloak (OIDC/PKCE, JWT propagation) and integrated another team’s chatbot via SSO without coupling the systems.</p>
-        <p>Led the Builder Plane of an on-premises data platform for a biomedical research institute: a Node.js/TypeScript backend (Fastify, PostgreSQL) that queues data movements for a separate pull-based move service, with leases, idempotent completion reporting and user-driven retries, plus a React UI with role-based access control per research group, on Keycloak (OIDC) federated with LDAP.</p>
-        <p>Introduced a spec-driven workflow with AI coding agents, with mandatory tests and code review, to increase delivery speed without sacrificing quality.</p>
-      </div>
-    </div>
+    <section id="experience">
+      <h2 class="section-label">Experience</h2>
 
-    <div class="exp-item">
-      <div class="exp-meta">
-        <div class="period">Jun 2025 — Nov 2025</div>
-        <div class="company">Capgemini</div>
-      </div>
-      <div class="exp-content">
-        <h3>Software Engineer</h3>
-        <p>Developed a contract management application facilitating interactions between client companies and suppliers using Spring Boot and JPA, ensuring seamless data persistence and business logic handling.</p>
-        <p>Integrated Apache Kafka with Scala in a streaming service to process and log real-time events from contract updates, improving system observability and auditability.</p>
-        <p>Researched and implemented a data pseudonymization algorithm using Spring Boot, developing a tool to mask sensitive information and ensure privacy compliance, while maintaining data integrity for use in downstream systems.</p>
-      </div>
-    </div>
+      <ol class="timeline">
 
-    <div class="exp-item">
-      <div class="exp-meta">
-        <div class="period">Jan 2024 — Apr 2025</div>
-        <div class="company">ICONSULTING</div>
-      </div>
-      <div class="exp-content">
-        <h3>Senior Full Stack Developer</h3>
-        <p>Training of new resources joining the project, both senior and junior, and management of task allocation among team members.</p>
-        <p>Management of the database through Spring Boot migrations to version changes, maintain a log of modifications, and facilitate easy releases across different environments.</p>
-        <p>Full Stack debugging and bug fixing on issues raised by the client (backoffice staff) due to technical debt inherited from the previous supplier. Performance optimization through native queries due to the use of the Hibernate middleware.</p>
-        <p>Created adaptive graphical interfaces using Angular framework for displaying and manipulating paginated tables.</p>
-      </div>
-    </div>
+        <li class="job">
+          <div class="job-head">
+            <h3>Software Engineer <span class="at">· Agile Lab</span></h3>
+            <span class="period">Dec 2025 — Present</span>
+          </div>
+          <p>Owned architecture and delivery of a KPI dashboard for a national public safety agency (Angular, Spring Boot, Hasura/PostgreSQL). Moved GraphQL queries from the frontend into a backend service layer, creating a single secured gateway with no direct data layer access and per-query failure isolation.</p>
+          <p>Designed the authentication and authorization model on Keycloak (OIDC/PKCE, JWT propagation) and integrated another team’s chatbot via SSO without coupling the systems.</p>
+          <p>Led the Builder Plane of an on-premises data platform for a biomedical research institute: a Node.js/TypeScript backend (Fastify, PostgreSQL) that queues data movements for a separate pull-based move service, with leases, idempotent completion reporting and user-driven retries, plus a React UI with role-based access control per research group, on Keycloak (OIDC) federated with LDAP.</p>
+          <p>Introduced a spec-driven workflow with AI coding agents, with mandatory tests and code review, to increase delivery speed without sacrificing quality.</p>
+          <ul class="chips">
+            <li>Angular</li><li>Spring Boot</li><li>Hasura</li><li>GraphQL</li><li>PostgreSQL</li><li>Keycloak</li><li>OIDC</li><li>Node.js</li><li>TypeScript</li><li>Fastify</li><li>React</li>
+          </ul>
+        </li>
 
-    <div class="exp-item">
-      <div class="exp-meta">
-        <div class="period">Nov 2021 — Dec 2023</div>
-        <div class="company">GD Services</div>
-      </div>
-      <div class="exp-content">
-        <h3>Junior Full Stack Developer</h3>
-        <p>Development and maintenance of a car dealer website. Created and maintained databases and collaborated with the development team to design and implement new features. Login management using Spring Security and authentication tokens.</p>
-      </div>
-    </div>
+        <li class="job">
+          <div class="job-head">
+            <h3>Software Engineer <span class="at">· Capgemini</span></h3>
+            <span class="period">Jun 2025 — Nov 2025</span>
+          </div>
+          <p>Developed a contract management application facilitating interactions between client companies and suppliers using Spring Boot and JPA, ensuring seamless data persistence and business logic handling.</p>
+          <p>Integrated Apache Kafka with Scala in a streaming service to process and log real-time events from contract updates, improving system observability and auditability.</p>
+          <p>Researched and implemented a data pseudonymization algorithm using Spring Boot, developing a tool to mask sensitive information and ensure privacy compliance, while maintaining data integrity for use in downstream systems.</p>
+          <ul class="chips">
+            <li>Spring Boot</li><li>JPA</li><li>Kafka</li><li>Scala</li>
+          </ul>
+        </li>
 
-  </section>
+        <li class="job">
+          <div class="job-head">
+            <h3>Senior Full Stack Developer <span class="at">· ICONSULTING</span></h3>
+            <span class="period">Jan 2024 — Apr 2025</span>
+          </div>
+          <p>Training of new resources joining the project, both senior and junior, and management of task allocation among team members.</p>
+          <p>Management of the database through Spring Boot migrations to version changes, maintain a log of modifications, and facilitate easy releases across different environments.</p>
+          <p>Full Stack debugging and bug fixing on issues raised by the client (backoffice staff) due to technical debt inherited from the previous supplier. Performance optimization through native queries due to the use of the Hibernate middleware.</p>
+          <p>Created adaptive graphical interfaces using Angular framework for displaying and manipulating paginated tables.</p>
+          <ul class="chips">
+            <li>Spring Boot</li><li>Hibernate</li><li>Angular</li><li>SQL</li>
+          </ul>
+        </li>
 
-  <!-- EDUCATION -->
-  <section>
-    <p class="section-label">Education</p>
-    <div class="edu-item edu-single">
-      <div>
+        <li class="job">
+          <div class="job-head">
+            <h3>Junior Full Stack Developer <span class="at">· GD Services</span></h3>
+            <span class="period">Nov 2021 — Dec 2023</span>
+          </div>
+          <p>Development and maintenance of a car dealer website. Created and maintained databases and collaborated with the development team to design and implement new features. Login management using Spring Security and authentication tokens.</p>
+          <ul class="chips">
+            <li>Spring Security</li><li>SQL</li>
+          </ul>
+        </li>
+
+      </ol>
+    </section>
+
+    <section id="education">
+      <h2 class="section-label">Education</h2>
+      <div class="edu">
         <h3>Informatic Engineering</h3>
         <p>Università degli Studi “La Sapienza”</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SKILLS -->
-  <section>
-    <p class="section-label">Tech Stack</p>
-    <div class="skills-grid">
-      <div class="skill-group">
-        <h4>Languages</h4>
-        <div class="tags">
-          <span class="tag tag-blue">Java</span>
-          <span class="tag tag-blue">Node.js</span>
-          <span class="tag tag-blue">TypeScript</span>
-          <span class="tag tag-blue">Python</span>
-          <span class="tag tag-blue">Scala</span>
+    <section id="stack">
+      <h2 class="section-label">Tech Stack</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <ul class="chips">
+            <li>Java</li><li>Node.js</li><li>TypeScript</li><li>Python</li><li>Scala</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Backend</h3>
+          <ul class="chips">
+            <li>Spring Boot</li><li>Spring Security</li><li>Hibernate</li><li>Fastify</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <ul class="chips">
+            <li>Angular</li><li>React</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Data</h3>
+          <ul class="chips">
+            <li>SQL</li><li>PostgreSQL</li><li>OracleDB</li><li>MongoDB</li><li>GraphQL</li><li>Hasura</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Messaging</h3>
+          <ul class="chips">
+            <li>Kafka</li><li>Event-Driven Architecture</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Identity &amp; Security</h3>
+          <ul class="chips">
+            <li>Keycloak</li><li>OAuth2</li><li>OIDC</li><li>JWT</li><li>Data Pseudonymization</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Cloud &amp; DevOps</h3>
+          <ul class="chips">
+            <li>Docker</li><li>Kubernetes</li><li>CI/CD (GitLab CI)</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Practices</h3>
+          <ul class="chips">
+            <li>Software Architecture (LLD, ADR)</li><li>AI-Assisted Development</li>
+          </ul>
         </div>
       </div>
-      <div class="skill-group">
-        <h4>Backend</h4>
-        <div class="tags">
-          <span class="tag tag-teal">Spring Boot</span>
-          <span class="tag tag-teal">Spring Security</span>
-          <span class="tag tag-teal">Hibernate</span>
-          <span class="tag tag-teal">Fastify</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <h4>Frontend</h4>
-        <div class="tags">
-          <span class="tag tag-amber">Angular</span>
-          <span class="tag tag-amber">React</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <h4>Data</h4>
-        <div class="tags">
-          <span class="tag tag-blue">SQL</span>
-          <span class="tag tag-blue">PostgreSQL</span>
-          <span class="tag tag-blue">OracleDB</span>
-          <span class="tag tag-blue">MongoDB</span>
-          <span class="tag tag-blue">GraphQL</span>
-          <span class="tag tag-blue">Hasura</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <h4>Messaging</h4>
-        <div class="tags">
-          <span class="tag tag-teal">Kafka</span>
-          <span class="tag tag-teal">Event-Driven Architecture</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <h4>Identity & Security</h4>
-        <div class="tags">
-          <span class="tag tag-rose">Keycloak</span>
-          <span class="tag tag-rose">OAuth2</span>
-          <span class="tag tag-rose">OIDC</span>
-          <span class="tag tag-rose">JWT</span>
-          <span class="tag tag-rose">Data Pseudonymization</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <h4>Cloud & DevOps</h4>
-        <div class="tags">
-          <span class="tag tag-rose">Docker</span>
-          <span class="tag tag-rose">Kubernetes</span>
-          <span class="tag tag-rose">CI/CD (GitLab CI)</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <h4>Practices</h4>
-        <div class="tags">
-          <span class="tag tag-amber">Software Architecture (LLD, ADR)</span>
-          <span class="tag tag-amber">AI-Assisted Development</span>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- LANGUAGES -->
-  <section>
-    <p class="section-label">Languages</p>
-    <div class="tags">
-      <span class="tag tag-blue">Italian (Fluent)</span>
-      <span class="tag tag-blue">Romanian (Fluent)</span>
-      <span class="tag tag-blue">English (Intermediate)</span>
-    </div>
-  </section>
-
-  <footer>
-    <div class="counter-box">
-      <div>
-        <span>👀</span>
-        <img src="https://hitwebcounter.com/counter/counter.php?page=21486931&style=0006&nbdigits=5&type=page&initCount=0" Alt="Visits">
+    <footer>
+      <div class="counter-box">
+        <div>
+          <span>👀</span>
+          <img src="https://hitwebcounter.com/counter/counter.php?page=21486931&style=0006&nbdigits=5&type=page&initCount=0" alt="Visits">
+        </div>
+        <div>
+          <span>🫂</span>
+          <img src="https://hitwebcounter.com/counter/counter.php?page=21486933&style=0006&nbdigits=5&type=ip&initCount=0" alt="Visitors">
+        </div>
       </div>
-      <div>
-        <span>🫂</span>
-        <img src="https://hitwebcounter.com/counter/counter.php?page=21486933&style=0006&nbdigits=5&type=ip&initCount=0" Alt="Visitors"/>
-      </div>
-    </div>
-    <p style="margin-top: 30px;">Updated 2026</p>
-  </footer>
+      <p>Updated 2026</p>
+    </footer>
 
+  </main>
 </div>
+<script src="script.js"></script>
 </body>
 </html>
