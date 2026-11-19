@@ -39,7 +39,7 @@
   <!-- ABOUT -->
   <section>
     <p class="section-label">About</p>
-    <p>Tech enthusiast with a strong passion for continuous learning and self-improvement. Driven by curiosity, I actively explore emerging innovations and stay updated on the latest developments in the technology world. Always looking for ways to deepen my knowledge and apply it to meaningful projects.</p>
+    <p>A lifelong technology enthusiast with an unwavering determination to learn and improve in this field. With a strong curiosity for technological innovation and its evolution, constantly trying to deepen my knowledge in these fields.</p>
   </section>
 
   <!-- EXPERIENCE -->
@@ -53,7 +53,10 @@
       </div>
       <div class="exp-content">
         <h3>Software Engineer</h3>
-        <p>Greater Rome Metropolitan Area · Remote</p>
+        <p>Owned architecture and delivery of a KPI dashboard for a national public safety agency (Angular, Spring Boot, Hasura/PostgreSQL). Moved GraphQL queries from the frontend into a backend service layer, creating a single secured gateway with no direct data layer access and per-query failure isolation.</p>
+        <p>Designed the authentication and authorization model on Keycloak (OIDC/PKCE, JWT propagation) and integrated another team’s chatbot via SSO without coupling the systems.</p>
+        <p>Led the Builder Plane of an on-premises data platform for a biomedical research institute: a Node.js/TypeScript backend (Fastify, PostgreSQL) that queues data movements for a separate pull-based move service, with leases, idempotent completion reporting and user-driven retries, plus a React UI with role-based access control per research group, on Keycloak (OIDC) federated with LDAP.</p>
+        <p>Introduced a spec-driven workflow with AI coding agents, with mandatory tests and code review, to increase delivery speed without sacrificing quality.</p>
       </div>
     </div>
 
@@ -64,40 +67,34 @@
       </div>
       <div class="exp-content">
         <h3>Software Engineer</h3>
-        <p>Greater Rome Metropolitan Area · Hybrid</p>
+        <p>Developed a contract management application facilitating interactions between client companies and suppliers using Spring Boot and JPA, ensuring seamless data persistence and business logic handling.</p>
+        <p>Integrated Apache Kafka with Scala in a streaming service to process and log real-time events from contract updates, improving system observability and auditability.</p>
+        <p>Researched and implemented a data pseudonymization algorithm using Spring Boot, developing a tool to mask sensitive information and ensure privacy compliance, while maintaining data integrity for use in downstream systems.</p>
       </div>
     </div>
 
     <div class="exp-item">
       <div class="exp-meta">
-        <div class="period">Mar 2024 — Jun 2025</div>
+        <div class="period">Jan 2024 — Apr 2025</div>
         <div class="company">ICONSULTING</div>
       </div>
       <div class="exp-content">
-        <h3>Software Engineer</h3>
-        <p>Rome · Remote. Software development, SQL, and database management.</p>
+        <h3>Senior Full Stack Developer</h3>
+        <p>Training of new resources joining the project, both senior and junior, and management of task allocation among team members.</p>
+        <p>Management of the database through Spring Boot migrations to version changes, maintain a log of modifications, and facilitate easy releases across different environments.</p>
+        <p>Full Stack debugging and bug fixing on issues raised by the client (backoffice staff) due to technical debt inherited from the previous supplier. Performance optimization through native queries due to the use of the Hibernate middleware.</p>
+        <p>Created adaptive graphical interfaces using Angular framework for displaying and manipulating paginated tables.</p>
       </div>
     </div>
 
     <div class="exp-item">
       <div class="exp-meta">
-        <div class="period">Oct 2022 — Feb 2024</div>
-        <div class="company">NTT DATA Italia</div>
-      </div>
-      <div class="exp-content">
-        <h3>Software Developer</h3>
-        <p>Rome · Remote. SQL, Database, and Salesforce platform development.</p>
-      </div>
-    </div>
-
-    <div class="exp-item">
-      <div class="exp-meta">
-        <div class="period">Jan 2022 — Feb 2024</div>
+        <div class="period">Nov 2021 — Dec 2023</div>
         <div class="company">GD Services</div>
       </div>
       <div class="exp-content">
-        <h3>Software Developer</h3>
-        <p>Rome. Software development and database management with Salesforce technologies.</p>
+        <h3>Junior Full Stack Developer</h3>
+        <p>Development and maintenance of a car dealer website. Created and maintained databases and collaborated with the development team to design and implement new features. Login management using Spring Security and authentication tokens.</p>
       </div>
     </div>
 
@@ -106,42 +103,35 @@
   <!-- EDUCATION -->
   <section>
     <p class="section-label">Education</p>
-    <div class="edu-item">
-      <div class="period">Sep 2017</div>
+    <div class="edu-item edu-single">
       <div>
-        <h3>Computer Engineering</h3>
-        <p>Sapienza University of Rome</p>
-      </div>
-    </div>
-    <div class="edu-item">
-      <div class="period">2011 — 2017</div>
-      <div>
-        <h3>High School Diploma</h3>
-        <p>Liceo Ettore Majorana</p>
+        <h3>Informatic Engineering</h3>
+        <p>Università degli Studi “La Sapienza”</p>
       </div>
     </div>
   </section>
 
   <!-- SKILLS -->
   <section>
-    <p class="section-label">Technology & Skills</p>
+    <p class="section-label">Tech Stack</p>
     <div class="skills-grid">
       <div class="skill-group">
         <h4>Languages</h4>
         <div class="tags">
           <span class="tag tag-blue">Java</span>
-          <span class="tag tag-blue">Python</span>
-          <span class="tag tag-blue">JavaScript</span>
+          <span class="tag tag-blue">Node.js</span>
           <span class="tag tag-blue">TypeScript</span>
+          <span class="tag tag-blue">Python</span>
+          <span class="tag tag-blue">Scala</span>
         </div>
       </div>
       <div class="skill-group">
         <h4>Backend</h4>
         <div class="tags">
           <span class="tag tag-teal">Spring Boot</span>
-          <span class="tag tag-teal">Spring Framework</span>
+          <span class="tag tag-teal">Spring Security</span>
           <span class="tag tag-teal">Hibernate</span>
-          <span class="tag tag-teal">REST APIs</span>
+          <span class="tag tag-teal">Fastify</span>
         </div>
       </div>
       <div class="skill-group">
@@ -149,8 +139,34 @@
         <div class="tags">
           <span class="tag tag-amber">Angular</span>
           <span class="tag tag-amber">React</span>
-          <span class="tag tag-amber">CSS</span>
-          <span class="tag tag-amber">HTML</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Data</h4>
+        <div class="tags">
+          <span class="tag tag-blue">SQL</span>
+          <span class="tag tag-blue">PostgreSQL</span>
+          <span class="tag tag-blue">OracleDB</span>
+          <span class="tag tag-blue">MongoDB</span>
+          <span class="tag tag-blue">GraphQL</span>
+          <span class="tag tag-blue">Hasura</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Messaging</h4>
+        <div class="tags">
+          <span class="tag tag-teal">Kafka</span>
+          <span class="tag tag-teal">Event-Driven Architecture</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Identity & Security</h4>
+        <div class="tags">
+          <span class="tag tag-rose">Keycloak</span>
+          <span class="tag tag-rose">OAuth2</span>
+          <span class="tag tag-rose">OIDC</span>
+          <span class="tag tag-rose">JWT</span>
+          <span class="tag tag-rose">Data Pseudonymization</span>
         </div>
       </div>
       <div class="skill-group">
@@ -158,36 +174,26 @@
         <div class="tags">
           <span class="tag tag-rose">Docker</span>
           <span class="tag tag-rose">Kubernetes</span>
-          <span class="tag tag-rose">CI/CD</span>
-          <span class="tag tag-rose">Git</span>
+          <span class="tag tag-rose">CI/CD (GitLab CI)</span>
         </div>
       </div>
       <div class="skill-group">
-        <h4>Databases</h4>
+        <h4>Practices</h4>
         <div class="tags">
-          <span class="tag tag-blue">SQL</span>
-          <span class="tag tag-blue">PostgreSQL</span>
-          <span class="tag tag-blue">MySQL</span>
-          <span class="tag tag-blue">MongoDB</span>
+          <span class="tag tag-amber">Software Architecture (LLD, ADR)</span>
+          <span class="tag tag-amber">AI-Assisted Development</span>
         </div>
       </div>
-      <div class="skill-group">
-        <h4>Platforms</h4>
-        <div class="tags">
-          <span class="tag tag-teal">Salesforce</span>
-          <span class="tag tag-teal">AWS</span>
-          <span class="tag tag-teal">GCP</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <h4>Soft Skills</h4>
-        <div class="tags">
-          <span class="tag tag-amber">Teamwork</span>
-          <span class="tag tag-amber">Problem Solving</span>
-          <span class="tag tag-amber">Communication</span>
-          <span class="tag tag-amber">Agile</span>
-        </div>
-      </div>
+    </div>
+  </section>
+
+  <!-- LANGUAGES -->
+  <section>
+    <p class="section-label">Languages</p>
+    <div class="tags">
+      <span class="tag tag-blue">Italian (Fluent)</span>
+      <span class="tag tag-blue">Romanian (Fluent)</span>
+      <span class="tag tag-blue">English (Intermediate)</span>
     </div>
   </section>
 
